@@ -9,7 +9,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "1.circle")
+            Image(systemName: "10.square")
                 .resizable()
                 .scaledToFit()
             Text("Version 1.1")
@@ -17,12 +17,15 @@ struct ContentView: View {
                 .fontWeight(.black)
         }
         .padding()
-        .foregroundColor(.mint)
+        .foregroundColor(.red)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewInterfaceOrientation(.landscapeRight)
+            .previewLayout(.device)
+            .previewDevice("iPhone 14")
     }
 }
